@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fútbol en Vivo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css"> <!-- Archivo CSS -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>⚽FUTBOL EN VIVO⚽</h1>
+        <p class='mensaje'>En esta pagina podras ver todos los partidos pasados, actuales y proximos, Copa Libertadores, Sudamericana y diferentes eventos deportivos.
+
+            .</p>
+    </nav>
+
+    <div class="container">
+        <!-- Sección de Partidos -->
+        <div class="matches">
+            <h2 id="btn-recent">⚽ PARTIDOS PASADOS ⚽</h2>
+            <div id="recent-matches" class="match-list" style="display: none;">
+                <p>No se encontraron partidos pasados.</p>
+            </div>
+        </div>
+
+        <div class="matches">
+            <h2 id="btn-today">⚽ PARTIDOS DE HOY ⚽</h2>
+            <div id="today-matches" class="match-list" style="display: none;">
+                <p>No se encontraron partidos disponibles.</p>
+            </div>
+        </div>
+
+        <div class="matches">
+            <h2 id="btn-upcoming">⚽ PRÓXIMOS PARTIDOS ⚽</h2>
+            <div id="upcoming-matches" class="match-list" style="display: none;">
+                <p>No se encontraron partidos proximos.</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="pa.js"></script> <!-- Archivo JavaScript -->
+</body>
+</html> 

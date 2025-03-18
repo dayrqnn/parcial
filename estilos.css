@@ -1,0 +1,96 @@
+/* Estilos generales */
+body {
+    font-family: 'Bungee', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    font-family: 'Bungee', sans-serif;
+    background: url(navbar.jpg) no-repeat center center/cover;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 50px 0;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+}
+.navbar h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Sección de partidos */
+.matches {
+    background: url(matches.jpg) no-repeat center center/cover;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrar contenido */
+}
+.matches h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* Botón de título (parece un botón pero es un h2) */
+.matches h2 {
+    display: inline-block;
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Efecto al pasar el cursor */
+.matches h2:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+
+/* Lista de partidos */
+.match-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+/* Tarjeta de partido */
+.match-card {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.match-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.match-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.match-card p {
+    color: #555;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none !important;
+}
+.match-list {
+    display: none;
+}
